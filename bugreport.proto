@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package tracker;
+
+message Report {
+	string application = 1;
+	string time = 2;
+	string information = 3;
+	string severity = 4;
+	string status = 5;
+}
+
+message Bug_tracker {
+	repeated Report reports = 1;
+}
